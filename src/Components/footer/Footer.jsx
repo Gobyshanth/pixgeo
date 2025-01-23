@@ -1,6 +1,9 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faSquareFacebook, faSquareInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+// import React from "react";
+import fb from "../../assets/devicon_facebook.png";
+import insta from "../../assets/instagram.png";
+import linkdn from "../../assets/linkedin.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {faSquareFacebook, faSquareInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -32,13 +35,14 @@ export const Footer = () => {
     <div className="flex flex-col md:flex-row md:items-center md:pl-20">
       <div className="flex gap-5 py-5 md:py-8 text-white text-3xl md:w-1/3">
         <a className="facebook" href='#'>
-          <li className="list-none flex gap-4 "><FontAwesomeIcon icon={faSquareFacebook} /></li>
+        
+          <img src={fb} className="list-none flex gap-4 " />
         </a>
         <a className="insta" href='#'>
-          <li className="list-none flex gap-4 "><FontAwesomeIcon icon={faSquareInstagram} /></li>
+        <img src={insta} className="list-none flex gap-4 " />
         </a>
         <a className="linkedin" href='#'>
-          <li className="list-none flex gap-4 "><FontAwesomeIcon icon={faLinkedin} /></li>
+        <img src={linkdn} className="list-none flex gap-4 " />
         </a>
       </div>
 
