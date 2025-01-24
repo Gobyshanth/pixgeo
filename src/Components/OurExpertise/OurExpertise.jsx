@@ -1,4 +1,4 @@
-import {  FaMobileAlt } from "react-icons/fa"; // Example icons
+
 
 export const OurExpertise = () => {
   return (
