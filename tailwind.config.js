@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      kaushan: ['Kaushan Script', 'serif'],
       courier: ['Courier New', 'Courier', 'monospace'], // Add Courier font family
      
     }
