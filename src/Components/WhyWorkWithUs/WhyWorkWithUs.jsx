@@ -1,6 +1,6 @@
 import {  FaMobileAlt } from "react-icons/fa"; // Example icons
 
-export const OurExpertise = () => {
+ const OurExpertise = () => {
   return (
     <div className="w-[80%] flex items-center justify-center mx-auto">
       <section>
@@ -64,3 +64,5 @@ export const OurExpertise = () => {
     </div>
   );
 };
+
+export default OurExpertise

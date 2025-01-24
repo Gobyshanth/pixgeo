@@ -19,7 +19,7 @@ export const OurExpertise = () => {
                 <h2>Web Developments</h2>
               </div>
               <div className="text-left">
-                <p>"Innovative iOS and Android apps that engage users and drive growth."</p>
+                <p>&quot;Innovative iOS and Android apps that engage users and drive growth.&quot;</p>
               </div>
             </div>
             <div className="flex flex-col items-center text-center border border-[#6E6E6E] rounded-[32px] p-10 mt-10 md:m-5 md:p-8">
@@ -30,7 +30,7 @@ export const OurExpertise = () => {
                 <h2>Mobile App Developments</h2>
               </div>
               <div className="text-left">
-                <p>"Innovative iOS and Android apps that engage users and drive growth."</p>
+                <p>&quot;Innovative iOS and Android apps that engage users and drive growth.&quot;</p>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export const OurExpertise = () => {
                 <h2>Custom Software Developments</h2>
               </div>
               <div className="text-left">
-                <p>"Innovative iOS and Android apps that engage users and drive growth."</p>
+                <p>&quot;Innovative iOS and Android apps that engage users and drive growth.&quot;</p>
               </div>
             </div>
 

@@ -1,7 +1,7 @@
 import { FaReact, FaFigma, FaAws } from "react-icons/fa";
 import { SiFlutter, SiNodedotjs} from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
-import { TbDatabaseSearch } from "react-icons/tb";
+import { TbDatabaseSearch ,TbBrandAzure  } from "react-icons/tb";
 import "./Style.css";
 
 import Location from "../Location/Location";
@@ -45,39 +45,61 @@ export const Home = () => {
       <OurExpertise />
 
       <section>
-        <div className="flex md:flex-row flex-col py-10 mt-[50px] h-150 items-center justify-center text-gray-400 font-courier bg-black">
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center">
-            <SiFlutter className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Flutter</span>
+        <div className="flex mt-[50px] h-[150px] items-center justify-center bg-black">
+          <div className="icon-container">
+            <SiFlutter className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">Flutter</span>
+            </div>
           </div>
 
-          <div className="pr-[40px] pl-[40px] flex flex-col items-center text-center ">
-            <FaReact className="w-[47px] h-[42px]" />
-            <span className="text-2xl">React Js</span>
+          <div className="icon-container">
+            <FaReact className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">React Js</span>
+            </div>
           </div>
-          <div className="pr-[40px] pl-[40px] flex flex-col items-center text-center ">
-            <DiDotnet className="w-[50px] h-[50px]" />
-            <span className="text-2xl">.Net</span>
+
+          <div className="icon-container">
+            <DiDotnet className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">.Net</span>
+            </div>
           </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center  ">
-            <FaFigma className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Figma</span>
+
+          <div className="icon-container">
+            <FaFigma className="w-[26px] h-[40px] text-[#565656]" />
+            <div className="pt-[25px]">
+              <span className="icon-text">Figma</span>
+            </div>
           </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center ">
-            <FaAws className="w-[50px] h-[50px]" />
-            <span className="text-2xl">AWS</span>
+
+          <div className="icon-container">
+            <FaAws className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">AWS</span>
+            </div>
           </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center  ">
-            <TbDatabaseSearch className="w-[50px] h-[50px]" />
-            <span className="text-2xl">SQL</span>
+
+          <div className="icon-container">
+            <TbDatabaseSearch className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">SQL</span>
+            </div>
           </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center ">
-            <bDatabaseSearch className="w-[50px] h-[50px]" />
-            <span className="text-2xl">AZYRE</span>
+
+          <div className="icon-container">
+            <TbBrandAzure className="icon fill-[#565656]" />
+            <div className="pt-[17px]">
+              <span className="icon-text">AZURE</span>
+            </div>
           </div>
-          <div className="pr-[40px]  flex flex-col items-center text-center ">
-            <SiNodedotjs className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Node Js</span>
+
+          <div className="icon-container">
+            <SiNodedotjs className="icon" />
+            <div className="pt-[17px]">
+              <span className="icon-text">Node Js</span>
+            </div>
           </div>
         </div>
       </section>

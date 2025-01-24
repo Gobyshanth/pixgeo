@@ -10,7 +10,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   
-  background-image: linear-gradient(to right, #010121d1, #000000, #0f0f0f ,#0c032d);  /* Linear gradient from red to blue */
+  background-image: linear-gradient(to right, #010121d1, #000000, #000000 ,#0c032d);  /* Linear gradient from red to blue */
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
