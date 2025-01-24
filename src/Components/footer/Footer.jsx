@@ -7,7 +7,7 @@ import linkdn from "../../assets/linkedin.png";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="flex bg-black flex-col font-Courier p-10">
+    <div className="flex bg-black flex-col font-Courier p-10 font-courier">
     <div className="flex flex-col justify-around text-white gap-5 md:gap-12 md:flex-row">
       <div className="email md:w-1/4">
         <a href="company@gmail.com">Email Us: company@gmail.com</a>
@@ -33,7 +33,7 @@ export const Footer = () => {
       </div>
     </div>
     <div className="flex flex-col md:flex-row md:items-center md:pl-20">
-      <div className="flex gap-5 py-5 md:py-8 text-white text-3xl md:w-1/3">
+      <div className="flex gap-5 py-5 md:py-6 text-white md:w-1/3">
         <a className="facebook" href='#'>
         
           <img src={fb} className="list-none flex gap-4 " />
@@ -46,14 +46,14 @@ export const Footer = () => {
         </a>
       </div>
 
-      <div className="py-2 md:py-8 md:w-1/4">
+      <div className="py-2 md:py-6 md:w-1/4">
         <ul>
           <li className="text-yellow-300 md:text-center">privacy policy</li>
         </ul>
       </div>
     </div>
 
-    <div className="footer-third-line">
+    <div className="footer-third-line pt-10">
       <div className="text-white md:text-center font-Courier">
         <p>&copy; {currentYear} PixGeo. All Right Reserved</p>
       </div>

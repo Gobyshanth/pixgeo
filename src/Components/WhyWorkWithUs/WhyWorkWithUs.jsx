@@ -5,19 +5,19 @@ export default function WhyWorkWithUs() {
     <div>
     <section>
         
-        <div className="relative bg-[url('/src/assets/bg-why-work-width-us.png')] bg-cover bg-center font-Courier h-screen hidden md:flex flex-col">
+        <div className="relative bg-[url('/src/assets/bg-why-work-width-us.png')] bg-cover bg-center font-courier h-screen hidden md:flex flex-col">
           <div className="flex pl-20 pt-20">
             <h1 className="text-5xl text-white font-bold pl-20 mb-8">Why Work with Us?</h1>
           </div>
 
-          <div className="relative flex items-center justify-flex-end ">
+          <div className="flex items-center ">
             {/* Content */}
-            <div className="flex justify-right">
+            <div className="relative flex w-full">
 
 
               {/* Right side - Text */}
-              <div className="absolute text-white left-[900px] top-3">
-                <ul className="relative space-y-12 text-lg ">
+              <div className="absolute text-white left-[900px] top-[40px]">
+                <ul className="space-y-12 text-lg ">
                   <li className="flex items-center">
                     <span className="inline-block bg-white m-[-20px] "></span>
                     <p  className="font-courier text-[20px] ">Strong Track Record &amp; Expertise.</p>
