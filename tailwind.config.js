@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        'icon-padding': '40px',
+      },
+      colors: {
+        'icon-color': '#565656',
+      },
+    },
     fontFamily: {
       kaushan: ['Kaushan Script', 'serif'],
       courier: ['Courier New', 'Courier', 'monospace'], // Add Courier font family

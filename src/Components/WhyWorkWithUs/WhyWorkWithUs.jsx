@@ -20,23 +20,23 @@ export default function WhyWorkWithUs() {
                 <ul className="relative space-y-12 text-lg ">
                   <li className="flex items-center">
                     <span className="inline-block bg-white m-[-20px] "></span>
-                    <p>Strong Track Record &amp; Expertise.</p>
+                    <p  className="font-courier text-[20px] ">Strong Track Record &amp; Expertise.</p>
                   </li>
                   <li className="flex items-center pt-5">
                     <span className="inline-block bg-white ml-[5px]"></span>
-                    <p>Agile and Flexible Development.</p>
+                    <p className="font-courier text-[20px] ">Agile and Flexible Development.</p>
                   </li>
                   <li className="flex items-center pt-4">
                     <span className="inline-block bg-white ml-[15px]"></span>
-                    <p>On-Time &amp; On-Budget Delivery.</p>
+                    <p className="font-courier text-[20px] ">On-Time &amp; On-Budget Delivery.</p>
                   </li>
                   <li className="flex items-center pt-4">
                     <span className="inline-block bg-white ml-[10px]"></span>
-                    <p>Dedicated Support &amp; Maintenance.</p>
+                    <p className="font-courier text-[20px] ">Dedicated Support &amp; Maintenance.</p>
                   </li>
                   <li className="flex items-center pt-3 ">
                     <span className="inline-block bg-white ml-[-10px] "></span>
-                    <p>Cutting-edge Technologies Used.</p>
+                    <p className="font-courier text-[20px] ">Cutting-edge Technologies Used.</p>
                   </li>
                 </ul>
               </div>
@@ -62,23 +62,23 @@ export default function WhyWorkWithUs() {
                 <ul className="space-y-6 text-lg ">
                   <li className="flex items-center">
                     <span className="inline-block bg-white "></span>
-                    <p>Strong Track Record &amp; Expertise.</p>
+                    <p className="font-courier text-[20px]">Strong Track Record &amp; Expertise.</p>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block bg-white"></span>
-                    <p>Agile and Flexible Development.</p>
+                    <p className="font-courier text-[20px]">Agile and Flexible Development.</p>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block bg-white"></span>
-                    <p>On-Time &amp; On-Budget Delivery.</p>
+                    <p className="font-courier text-[20px]">On-Time &amp; On-Budget Delivery.</p>
                   </li>
                   <li className="flex items-center ">
                     <span className="inline-block bg-white"></span>
-                    <p>Dedicated Support &amp; Maintenance.</p>
+                    <p className="font-courier text-[20px]">Dedicated Support &amp; Maintenance.</p>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block bg-white"></span>
-                    <p>Cutting-edge Technologies Used.</p>
+                    <p className="font-courier text-[20px]">Cutting-edge Technologies Used.</p>
                   </li>
                 </ul>
               </div>

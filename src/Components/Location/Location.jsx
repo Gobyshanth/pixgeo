@@ -17,7 +17,7 @@ const Location = () => {
                 ></iframe>
             </div>
 
-            <div className="flex w-10/12 mx-auto bg-black-700 text-white font-roboto">
+            <div className="flex w-10/12 h-[62px] mx-auto bg-black-200 bg-transparent backdrop-blur-s  text-white font-roboto">
                 <p className="ml-2 text-left font-semibold tracking-wide">
                     <span>Address :</span>  United Kingdom.
                 </p>
