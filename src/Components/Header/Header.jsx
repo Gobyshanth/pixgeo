@@ -33,7 +33,7 @@ export const Header = () => {
         </ul>
 
         {isMenuOpen && (
-          <ul className="fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-black24 backdrop-blur-lg p-5 flex flex-col space-y-4">
+          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-black24 backdrop-blur-lg p-5 flex flex-col space-y-4">
             <a href="/" onClick={toggleMenu} className="text-white">
               <li>Home</li>
             </a>
