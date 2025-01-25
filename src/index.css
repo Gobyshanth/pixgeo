@@ -42,35 +42,22 @@ h1 {
 
 /* navbar */
 
-.navbar{
-  justify-content: center;
-}
 
-.nav{
-  z-index: 10000;
-  padding: 17px;
-
-
-}
-
-.nav a{
-  text-decoration: none;
-  color: #fff;
-  
-}
 /* styles.css */
 
 @keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
+ 
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
+
 }
 
 .animate-slide {
-  animation: slide 15s linear infinite;
+  animation: slide 20s linear infinite;
 }
 
 

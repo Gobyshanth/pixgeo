@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div className="container">
       <section>
-        <div className="bg-[url('/src/assets/Homepage-Background.png')] bg-cover bg-center h-screen">
+        <div className="bg-[url('/src/assets/Homepage-Background.png')] bg-blur-custom bg-cover bg-center h-screen">
           <div className="bg-custom-gradient bg-cover bg-center h-screen flex items-end justify-center py-[50px] ">
             <div className="relative flex items-center w-[1172px] h-[260px] text-center rounded-[32px] bg-black12 backdrop-blur-[25px]">
               <h1 className="text-white font-courier font-bold text-[50px] md:text-[90px]">
@@ -47,7 +47,7 @@ export const Home = () => {
       <OurExpertise />
 
       <section className="overflow-hidden bg-black h-[150px] flex items-center justify-center">
-      <div className="slider flex justify-between w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
+      <div className="slider flex justify-center w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
         <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
           <SiFlutter className="w-10 h-10" />
           <div className="pt-[17px]">

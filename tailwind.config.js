@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      
+      blur: {
+        'custom': '349.63px', // Define a custom blur value
+      },
+
       colors: {
         'icon-text': '#565656',
         customGray: 'rgb(86 86 86 / var(--tw-text-opacity, 1))',
