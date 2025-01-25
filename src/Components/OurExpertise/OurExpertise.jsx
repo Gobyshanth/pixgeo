@@ -2,10 +2,11 @@
 
 export const OurExpertise = () => {
   return (
-    <div className="w-[75%] flex items-center justify-center mx-auto font-courier">
-      <section>
-        <div className="bg-black-200 flex items-center ">
-          <h2 className="text-white text-4xl font-bold pt-20 pr-8 pb-10 pl-[10px]">
+    <section>
+    <div className="bg-custom-end flex flex-col items-center justify-center py-[50px] font-courier">
+     <div className="w-[75%]">
+     <div className="flex items-center">
+          <h2 className="text-white text-4xl font-bold pr-8 pb-10 pl-[10px]">
             Our Expertise
           </h2>
         </div>
@@ -48,7 +49,8 @@ export const OurExpertise = () => {
 
           </div>
         </div>
-      </section>
+     </div>
     </div>
+    </section>
   );
 };

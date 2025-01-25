@@ -1,68 +1,85 @@
-import {  FaMobileAlt } from "react-icons/fa"; // Example icons
-
- const OurExpertise = () => {
+export default function WhyWorkWithUs() {
   return (
-    <div className="w-[80%] flex items-center justify-center mx-auto">
+    <div>
       <section>
-        <div className="bg-black-200 flex items-center ">
-          <h2 className="text-white text-4xl font-bold pt-20 pr-8 pb-10 pl-[10px]">
-            Our Expertise
-          </h2>
+        <div className="relative bg-[url('/src/assets/bg-why-work-width-us.png')] bg-cover bg-center font-courier h-screen hidden md:flex flex-col">
+          <div className="bg-custom-why h-screen">
+            <div className="flex pl-20 pt-20">
+              <h1 className="text-5xl text-white font-bold pl-20 mb-8">
+                Why Work with Us?
+              </h1>
+            </div>
+
+            <div className="flex items-center ">
+              <div className="relative flex w-full">
+                <div className="absolute text-white left-[900px] top-[40px]">
+                  <ul className="space-y-12 text-lg ">
+                    <li className="flex items-center">
+                      <span className="inline-block bg-white m-[-20px] "></span>
+                      <p>Strong Track Record &amp; Expertise.</p>
+                    </li>
+                    <li className="flex items-center pt-5">
+                      <span className="inline-block bg-white ml-[5px]"></span>
+                      <p>Agile and Flexible Development.</p>
+                    </li>
+                    <li className="flex items-center pt-4">
+                      <span className="inline-block bg-white ml-[15px]"></span>
+                      <p>On-Time &amp; On-Budget Delivery.</p>
+                    </li>
+                    <li className="flex items-center pt-4">
+                      <span className="inline-block bg-white ml-[10px]"></span>
+                      <p>Dedicated Support &amp; Maintenance.</p>
+                    </li>
+                    <li className="flex items-center pt-3 ">
+                      <span className="inline-block bg-white ml-[-10px] "></span>
+                      <p>Cutting-edge Technologies Used.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="home-page-expertise">
-          <div className="expertise-developments flex justify-center">
-          <div className="web-developments flex flex-col items-center text-center">
-              <div className="icon text-4xl text-green-500 flex items-center justify-center p-[40px] text-[50px]">
-                <FaMobileAlt />
-              </div>
-              <div className="title">
-                <h2>Mobile App Developments</h2>
-              </div>
-              <div className="content">
-                <p>Innovative iOS and Android apps that engage users and drive growth</p>
-              </div>
-            </div>
-            <div className="web-developments flex flex-col items-center text-center">
-              <div className="icon text-4xl text-green-500 flex items-center justify-center p-[40px] text-[50px]">
-                <FaMobileAlt />
-              </div>
-              <div className="title">
-                <h2>Mobile App Developments</h2>
-              </div>
-              <div className="content">
-                <p>Innovative iOS and Android apps that engage users and drive growth</p>
-              </div>
-            </div>
+      </section>
 
-            <div className="web-developments flex flex-col items-center text-center">
-              <div className="icon text-4xl text-green-500 flex items-center justify-center p-[40px] text-[50px]">
-                <FaMobileAlt />
-              </div>
-              <div className="title">
-                <h2>Mobile App Developments</h2>
-              </div>
-              <div className="content">
-                <p>Innovative iOS and Android apps that engage users and drive growth</p>
+      <section>
+        <div className="relative font-Courier pb-20 h-auto bg-gradient-to-r from-black via-purple-900 to-black md:hidden flex flex-col items-center">
+          <div className="flex pt-20">
+            <h1 className="text-5xl text-white font-bold pl-20 mb-8">
+              Why Work with Us?
+            </h1>
+          </div>
+
+          <div className="relative flex items-center justify-flex-end ">
+            <div className="flex justify-right">
+              <div className=" text-white">
+                <ul className="space-y-6 text-lg ">
+                  <li className="flex items-center">
+                    <span className="inline-block bg-white "></span>
+                    <p>Strong Track Record &amp; Expertise.</p>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="inline-block bg-white"></span>
+                    <p>Agile and Flexible Development.</p>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="inline-block bg-white"></span>
+                    <p>On-Time &amp; On-Budget Delivery.</p>
+                  </li>
+                  <li className="flex items-center ">
+                    <span className="inline-block bg-white"></span>
+                    <p>Dedicated Support &amp; Maintenance.</p>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="inline-block bg-white"></span>
+                    <p>Cutting-edge Technologies Used.</p>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div className="web-developments flex flex-col items-center text-center">
-              <div className="icon text-4xl text-green-500 flex items-center justify-center p-[40px] text-[50px]">
-                <FaMobileAlt />
-              </div>
-              <div className="title">
-                <h2>Mobile App Developments</h2>
-              </div>
-              <div className="content">
-                <p>Innovative iOS and Android apps that engage users and drive growth</p>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
     </div>
   );
-};
-
-export default OurExpertise
+}

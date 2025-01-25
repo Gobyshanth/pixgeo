@@ -12,16 +12,18 @@ export const Home = () => {
   return (
     <div className="container">
       <section>
-        <div className="bg-[url('/src/assets/Homepage-Background.png')] bg-cover bg-center h-screen flex items-center ">
-          <div className="relative text-center text-xl md:text-2xl text-white font-courier rounded-[32px] bg-black/12 backdrop-blur-[25px]">
-            <h1 className="pt-[30px] font-bold text-[50px] md:text-[90px]">
-              Empowering Tomorrow with Technology
-            </h1>
+        <div className="bg-[url('/src/assets/Homepage-Background.png')] bg-cover bg-center h-screen">
+          <div className="bg-custom-gradient bg-cover bg-center h-screen flex items-end justify-center py-[50px] ">
+            <div className="relative flex items-center w-[1172px] h-[260px] text-center rounded-[32px] bg-black12 backdrop-blur-[25px]">
+              <h1 className="text-white font-courier font-bold text-[50px] md:text-[90px]">
+                Empowering Tomorrow with Technology
+              </h1>
+          </div>
           </div>
         </div>
       </section>
 
-      <div className="flex items-center justify-center pt-[150px]">
+      <div className="flex bg-custom-start items-center justify-center py-[150px]">
 
         <section className="p-10 md:p-15 text-white flex flex-col items-center justify-center border border-[#6E6E6E] rounded-[32px]">
           <div className="">
@@ -45,7 +47,7 @@ export const Home = () => {
       <OurExpertise />
 
       <section>
-        <div className="flex mt-[50px] h-[150px] items-center justify-center bg-black">
+        <div className="flex h-[150px] items-center justify-center bg-black">
           <div className="icon-container">
             <SiFlutter className="icon" />
             <div className="pt-[17px]">
