@@ -1,13 +1,1 @@
-/* styles.css */
-.icon-container {
-    @apply flex flex-col items-center text-center pr-[40px] pl-[51px];
-  }
-  
-  .icon {
-    @apply w-[45px] h-[50px] text-[#565656];
-  }
-  
-  .icon-text {
-    @apply text-2xl text-[#565656] font-courier text-[20px];
-  }
-  
+

@@ -46,65 +46,65 @@ export const Home = () => {
 
       <OurExpertise />
 
-      <section>
-        <div className="flex h-[150px] items-center justify-center bg-black">
-          <div className="icon-container">
-            <SiFlutter className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">Flutter</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <FaReact className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">React Js</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <DiDotnet className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">.Net</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <FaFigma className="w-[26px] h-[40px] text-[#565656]" />
-            <div className="pt-[25px]">
-              <span className="icon-text">Figma</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <FaAws className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">AWS</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <TbDatabaseSearch className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">SQL</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <TbBrandAzure className="icon fill-[#565656]" />
-            <div className="pt-[17px]">
-              <span className="icon-text">AZURE</span>
-            </div>
-          </div>
-
-          <div className="icon-container">
-            <SiNodedotjs className="icon" />
-            <div className="pt-[17px]">
-              <span className="icon-text">Node Js</span>
-            </div>
+      <section className="overflow-hidden bg-black h-[150px] flex items-center justify-center">
+      <div className="slider flex justify-between w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <SiFlutter className="w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">Flutter</span>
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <FaReact className="w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="flex font-courier text-[20px]">React Js</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <DiDotnet className="icon w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">.Net</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <FaFigma className="w-[26px] h-[40px] text-[#565656]" />
+          <div className="pt-[25px]">
+            <span className="font-courier text-[20px]">Figma</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <FaAws className="icon w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">AWS</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <TbDatabaseSearch className="icon w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">SQL</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <TbBrandAzure className="icon w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">Azure</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-icon-text px-[40px]">
+          <SiNodedotjs className="icon w-10 h-10" />
+          <div className="pt-[17px]">
+            <span className="font-courier text-[20px]">Node Js</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <WhyWorkWithUs />
 

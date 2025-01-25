@@ -6,11 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      spacing: {
-        'icon-padding': '40px',
-      },
       colors: {
-        'icon-color': '#565656',
+        'icon-text': '#565656',
+        customGray: 'rgb(86 86 86 / var(--tw-text-opacity, 1))',
         black12: 'rgba(0, 0, 0, 0.12)',
         black24: 'rgba(0, 0, 0, 0.24)',
         black35: 'rgba(0, 0, 0, 0.35)'
