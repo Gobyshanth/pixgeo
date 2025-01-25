@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      zIndex: {
+        '1999': '1999',
+      },
       
       blur: {
         'custom': '349.63px', // Define a custom blur value

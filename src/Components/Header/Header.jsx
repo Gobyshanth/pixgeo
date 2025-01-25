@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <div className="m-0 p-0">
       <div className="relative mt-12 md:hidden flex items-center">
-        <ul className="fixed w-full p-5 bg-black24 backdrop-blur-lg flex justify-between items-center">
+        <ul className="z-1999 fixed w-full p-5 bg-black24 backdrop-blur-lg flex justify-between items-center">
           <li>
             <a href="/" className="flex items-center">
               <div className="rounded-full p-2 bg-black24 backdrop-blur-[25px]">
@@ -51,7 +51,7 @@ export const Header = () => {
       </div>
 
       <div className="hidden md:flex justify-center text-center font-roboto md:align-center justify-end">
-        <ul className="nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-black24 bg-transparent backdrop-blur-lg mt-[100px]">
+        <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-black24 bg-transparent backdrop-blur-lg mt-[100px]">
           <a href="/" className="mb-3 md:mb-0">
             <li className="text-[20px] md:px-6">Home</li>
           </a>
