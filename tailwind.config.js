@@ -19,7 +19,10 @@ export default {
         customGray: 'rgb(86 86 86 / var(--tw-text-opacity, 1))',
         black12: 'rgba(0, 0, 0, 0.12)',
         black24: 'rgba(0, 0, 0, 0.24)',
-        black35: 'rgba(0, 0, 0, 0.35)'
+        black35: 'rgba(0, 0, 0, 0.35)',
+        black:'#000',
+        blue:'rgba(28, 0, 207, 0.12)',
+        purple:'#E959D8'
       },
       backgroundImage: {
        'custom-gradient': 'linear-gradient(to top left, rgba(90, 4, 81, 0.31),  rgba(90, 4, 81, 0.31), rgba(28, 0, 207, 0.29))',

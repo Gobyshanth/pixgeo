@@ -11,6 +11,7 @@ export const Header = () => {
 
   return (
     <div className="m-0 p-0">
+      {/* Mobile Menu */}
       <div className="relative mt-12 md:hidden flex items-center">
         <ul className="z-1999 fixed w-full p-5 bg-black24 backdrop-blur-lg flex justify-between items-center">
           <li>
@@ -25,53 +26,54 @@ export const Header = () => {
             </a>
           </li>
 
-          <li className="text-black p-5">
-            <button onClick={toggleMenu} className="focus:outline-none p-2 rounded-[5px]">
-              {isMenuOpen ? <FiX size={30} /> : <FiMenu size={30} />}
+          <li className="text-white">
+            <button onClick={toggleMenu} className="focus:outline-none p-2 rounded-[5px] bg-black24 backdrop-blur-[25px]">
+              {isMenuOpen ? <FiX size={25} /> : <FiMenu size={25} />}
             </button>
           </li>
         </ul>
 
         {isMenuOpen && (
-          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-black24 backdrop-blur-lg p-5 flex flex-col space-y-4">
-            <a href="/" onClick={toggleMenu} className="text-white">
+          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-black24 backdrop-blur-lg flex flex-col ">
+            <a href="/" onClick={toggleMenu} className="text-white hover:bg-black24 transfom bg-cover p-5">
               <li>Home</li>
             </a>
-            <a href="/About" onClick={toggleMenu} className="text-white">
+            <a href="/About" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
               <li>About Us</li>
             </a>
-            <a href="/Services" onClick={toggleMenu} className="text-white">
+            <a href="/Services" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
               <li>Services</li>
             </a>
-            <a href="/Contact" onClick={toggleMenu} className="text-white">
+            <a href="/Contact" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
               <li>Contact Us</li>
             </a>
           </ul>
         )}
       </div>
 
-      <div className="hidden md:flex justify-center text-center font-roboto md:align-center justify-end">
+      {/* Desktop Menu */}
+      <div className="hidden md:flex justify-center text-center font-roboto align-center">
         <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-black24 bg-transparent backdrop-blur-lg mt-[100px]">
-          <a href="/" className="mb-3 md:mb-0">
-            <li className="text-[20px] md:px-6">Home</li>
+          <a href="/" className="hover:bg-black24 rounded-l-[25.6px] py-[16px]">
+            <li className="text-[20px] px-6">Home</li>
           </a>
-          <a href="/About"  className="mb-3 md:mb-0">
-            <li className="text-[20px] md:px-6">About Us</li>
+          <a href="/About" className="hover:bg-black24 py-[16px]">
+            <li className="text-[20px] px-6">About Us</li>
           </a>
-          <a href="/">
-            <i className="hidden md:block rounded-[50%] md:left-[0] p-5 flex md:items-center md:w-[110px] md:h-[110px] bg-black24 backdrop-blur-[25px]">
+          <a href="/" className="mx-5">
+            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-black24 backdrop-blur-[25px]">
               <img
                 src={logo}
                 alt="Logo"
-                className=" rounded-[50%] md:w-[70px] md:h-[70px] w-[50px] h-[50px]"
+                className="rounded-[50%] w-[70px] h-[70px]"
               />
             </i>
           </a>
-          <a href="/Services" className="mb-3 md:mb-0">
-            <li className="text-[20px] md:px-6">Services</li>
+          <a href="/Services" className="hover:bg-black24 hover:backdrop-blur-[25px] py-[16px]">
+            <li className="text-[20px] px-6">Services</li>
           </a>
-          <a href="/Contact" className="mb-3 md:mb-0">
-            <li className="text-[20px] md:px-6">Contact Us</li>
+          <a href="/Contact" className="hover:bg-black24 bg-cover rounded-r-[25.6px] py-[16px]">
+            <li className="text-[20px] px-6">Contact Us</li>
           </a>
         </ul>
       </div>

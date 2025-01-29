@@ -1,5 +1,3 @@
-
-
 export const OurExpertise = () => {
   return (
     <section>
