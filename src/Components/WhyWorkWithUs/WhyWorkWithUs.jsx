@@ -48,7 +48,7 @@ export default function WhyWorkWithUs() {
       <section>
         <div className="relative font-Courier pb-20 h-auto bg-gradient-to-r from-black via-purple-900 to-black md:hidden flex flex-col items-center">
           <div className="flex pt-20">
-            <h1 className="text-5xl text-white font-bold pl-10 mb-8">
+            <h1 className="text-4xl text-white font-bold px-10 mb-8">
               Why Work with Us?
             </h1>
           </div>
