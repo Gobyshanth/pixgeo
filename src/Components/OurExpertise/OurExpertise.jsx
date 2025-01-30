@@ -1,10 +1,10 @@
 export const OurExpertise = () => {
   return (
     <section>
-    <div className="bg-custom-end flex flex-col items-center justify-center py-[50px] font-courier">
+    <div className="md:bg-custom-end bg-custom-mdend flex flex-col items-center justify-center py-[50px] font-courier">
      <div className="w-[80%]">
      <div className="flex items-center">
-          <h2 className="text-white text-4xl font-bold pr-8 pb-10 pl-[10px]">
+          <h2 className="text-white md:text-4xl text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
             Our Expertise
           </h2>
         </div>
