@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'minus-4': '96%', // Adjust this for a close -4% effect
+      },
       zIndex: {
         '1999': '1999',
       },
