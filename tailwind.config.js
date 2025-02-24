@@ -8,6 +8,7 @@ export default {
     extend: {
       fontSize: {
         'minus-4': '96%', // Adjust this for a close -4% effect
+        'minus-3': '97%', // Adjust this for a close -4% effect
       },
       zIndex: {
         '1999': '1999',
