@@ -1,7 +1,11 @@
-
+import { AboutMission } from "./AboutMission"
+import { AboutUsHeader } from "./AboutUsHeader"
 
 export const About = () => {
   return (
-    <div>About</div>
+    <div className="container">
+      <AboutUsHeader />
+      <AboutMission />
+    </div>
   )
 }
