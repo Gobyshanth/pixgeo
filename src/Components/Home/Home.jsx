@@ -24,7 +24,7 @@ export const Home = () => {
       </section>
 
       {/* Transforming Ideas Section */}
-      <div className="flex bg-custom-mstart md:bg-custom-start items-center justify-center py-[50px] md:py-[150px]">
+      <div className="flex bg-custom-mstart md:bg-custom-start items-center justify-center py-[50px] md:pt-[50px] md:pb-[0px]">
         <section className="p-10 md:p-15 text-white flex flex-col items-center justify-center border border-[#6E6E6E] rounded-[32px] mx-4 md:mx-0">
           <div>
             <h2 className="font-courier font-bold text-[25px] md:text-[50px] text-center">

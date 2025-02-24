@@ -12,14 +12,14 @@ export const Header = () => {
     <div className="m-0 p-0">
       {/* Mobile Menu */}
       <div className="relative mt-12 md:hidden flex items-center">
-        <ul className="z-1999 fixed w-full p-5 bg-black24 backdrop-blur-lg flex justify-between items-center">
+        <ul className="z-1999 fixed w-full p-5 bg-white/10 backdrop-blur-lg flex justify-between items-center">
           <li>
             <a href="/" className="flex items-center">
-              <div className="rounded-full p-2 bg-black24 backdrop-blur-[25px]">
+              <div className="rounded-full p-2 bg-white/10 backdrop-blur-[25px]">
                 <img
                   src={logo}
                   alt="Logo"
-                  className="rounded-full w-[50px] h-[50px]"
+                  className="rounded-full w-[40px] h-[40px]"
                 />
               </div>
             </a>
@@ -33,7 +33,7 @@ export const Header = () => {
         </ul>
 
         {isMenuOpen && (
-          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-black24 backdrop-blur-lg flex flex-col ">
+          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-white/10 backdrop-blur-lg flex flex-col ">
             <a href="/" onClick={toggleMenu} className="text-white hover:bg-black24 transfom bg-cover p-5">
               <li>Home</li>
             </a>
@@ -52,7 +52,8 @@ export const Header = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex justify-center text-center font-roboto align-center">
-        <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-black24 bg-transparent backdrop-blur-lg mt-[100px]">
+      <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-white/10 backdrop-blur-lg mt-[100px]">
+
           <a href="/" className="hover:bg-black24 rounded-l-[25.6px] py-[16px]">
             <li className="text-[20px] px-6">Home</li>
           </a>
@@ -60,7 +61,7 @@ export const Header = () => {
             <li className="text-[20px] px-6">About Us</li>
           </a>
           <a href="/" className="mx-5">
-            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-black24 backdrop-blur-[25px]">
+            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-white/80 backdrop-blur-[25px]">
               <img
                 src={logo}
                 alt="Logo"
