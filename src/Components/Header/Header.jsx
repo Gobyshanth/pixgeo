@@ -61,7 +61,7 @@ export const Header = () => {
             <li className="text-[20px] px-6">About Us</li>
           </a>
           <a href="/" className="mx-5">
-            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-white/80 backdrop-blur-[25px]">
+            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-black/80 backdrop-blur-[25px]">
               <img
                 src={logo}
                 alt="Logo"
