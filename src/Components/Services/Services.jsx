@@ -1,4 +1,4 @@
-
+import ServiceCard from "./ServiceCard";
 
 export const Services = () => {
   return (
@@ -15,26 +15,28 @@ export const Services = () => {
           </div>
         </div>
       </section>
-
+      <section>
+        <ServiceCard />
+      </section>
       <section className="bg-custom-mdend md:bg-gradient-to-b from-[#0f0f0f] via-[#362134] to-[#181a22]">
         <div className="flex flex-col items-center justify-center py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-              <h2 className="text-white md:text-4xl text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
+              <h2 className="text-white md:text-[50px] text-bold  font-bold pr-8 md:pb-5 md:pt-10 pb-5 pl-[10px]">
                 Web Development
               </h2>
             </div>
             <div className="flex items-center justify-center w-full">
               <div className="flex flex-col md:flex-row justify-center text-white">
                 <div className="flex flex-col items-center text-center md:w-1/2 p-10 mt-10 md:m-2 md:p-6">
-                  <div className="flex items-center justify-center p-[20px]">
+                  <div className="flex items-center justify-center p-[20px] ">
                     <img
                       className=""
-                      src="/src/assets/21034578.png"
+                      src="/src/assets/21034578.png "
                       alt="web-development"
                     />
                   </div>
-                  <div className="text-center text-[24px] font-semibold pb-4">
+                  <div className="text-center text-[24px] font-semibold pb-3">
                     <h3>Custom design & development</h3>
                   </div>
                 </div>
@@ -58,7 +60,7 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-              <h2 className="text-white md:text-4xl text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
+              <h2 className="text-white md:text-[50px]  text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
               Mobile App Development
               </h2>
             </div>
@@ -67,8 +69,8 @@ export const Services = () => {
                 <div className="flex flex-col items-center text-center p-10 mt-10 md:m-2 md:p-6">
                   <div className="flex items-center justify-center p-[20px]">
                     <img
-                      className="w-[520] h-[auto]"
-                      src="/src/assets/platform-apps.png"
+                      // className="w-[520] h-[auto]"
+                      src="/src/assets/web.png"
                       alt="web-development"
                     />
                   </div>
@@ -108,7 +110,7 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-              <h2 className="text-white md:text-4xl text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
+              <h2 className="text-white md:text-[50px]  text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
               Custom Software Development
               </h2>
             </div>

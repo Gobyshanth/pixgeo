@@ -7,6 +7,7 @@ import { Services } from "./Components/Services/Services";
 import { About } from "./Components/About/About";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/footer/Footer";
+import { Chatbot } from './Components/Chatbot/Chatbot';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <Chatbot />
       <div>
        
       </div>

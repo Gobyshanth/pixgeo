@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../assets/logo.webp";
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path ? "bg-white/15 h-[58px] rounded-lg color:" : "";
   };
 
   return (
@@ -27,23 +34,23 @@ export const Header = () => {
 
           <li className="text-white">
             <button onClick={toggleMenu} className="focus:outline-none p-2 rounded-[5px] bg-black24 backdrop-blur-[25px]">
-              {isMenuOpen ? <FiX size={25} /> : <FiMenu size={25} />}
+              {isMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
             </button>
           </li>
         </ul>
 
         {isMenuOpen && (
-          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-white/10 backdrop-blur-lg flex flex-col ">
-            <a href="/" onClick={toggleMenu} className="text-white hover:bg-black24 transfom bg-cover p-5">
+          <ul className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-white/10 backdrop-blur-lg flex flex-col">
+            <a href="/" onClick={toggleMenu} className={`text-white hover:bg-[#141414] transfom bg-cover p-5 ${isActive('/')}`}>
               <li>Home</li>
             </a>
-            <a href="/About" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
+            <a href="/About" onClick={toggleMenu} className={`text-white hover:bg-[#141414] bg-cover p-5 ${isActive('/About')}`}>
               <li>About Us</li>
             </a>
-            <a href="/Services" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
+            <a href="/Services" onClick={toggleMenu} className={`text-white hover:bg-[#141414] bg-cover p-5 ${isActive('/Services')}`}>
               <li>Services</li>
             </a>
-            <a href="/Contact" onClick={toggleMenu} className="text-white hover:bg-black24 bg-cover p-5">
+            <a href="/Contact" onClick={toggleMenu} className={`text-white hover:bg-bg-[#141414] h-[ 58px] rounded-lg transfom bg-cover p-5 ${isActive('/Contact')}`}>
               <li>Contact Us</li>
             </a>
           </ul>
@@ -52,27 +59,26 @@ export const Header = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex justify-center text-center font-roboto align-center">
-      <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-white/10 backdrop-blur-lg mt-[100px]">
-
-          <a href="/" className="hover:bg-black24 rounded-l-[25.6px] py-[16px]">
+        <ul className="z-1999 nav fixed text-white flex md:flex-row flex-col m-10 md:rounded-[25.6px] h-[62px] justify-around items-center bg-white/10 backdrop-blur-lg mt-[100px]">
+          <a href="/" className={`hover:bg-black24 rounded-l-[25.6px] py-[16px] ${isActive('/')}`}>
             <li className="text-[20px] px-6">Home</li>
           </a>
-          <a href="/About" className="hover:bg-black24 py-[16px]">
+          <a href="/About" className={`hover:bg-black24 py-[16px] ${isActive('/About')}`}>
             <li className="text-[20px] px-6">About Us</li>
           </a>
           <a href="/" className="mx-5">
-            <i className="rounded-[50%] md:left-[0] p-5 flex md:items-center w-[110px] h-[110px] bg-black/80 backdrop-blur-[25px]">
+            {/* <i className="rounded-[100%]  w-[110px] h-[110px] bg-white/10 backdrop-blur-[25px]"> */}
               <img
                 src={logo}
                 alt="Logo"
-                className="rounded-[50%] w-[70px] h-[70px]"
+                className="rounded-[50%] w-[100px] h-[100px]"
               />
-            </i>
+            {/* </i> */}
           </a>
-          <a href="/Services" className="hover:bg-black24 hover:backdrop-blur-[25px] py-[16px]">
+          <a href="/Services" className={`hover:bg-black24 py-[16px] ${isActive('/Services')}`}>
             <li className="text-[20px] px-6">Services</li>
           </a>
-          <a href="/Contact" className="hover:bg-black24 bg-cover rounded-r-[25.6px] py-[16px]">
+          <a href="/Contact" className={`hover:bg-black24 bg-cover rounded-r-[25.6px] py-[16px] ${isActive('/Contact')}`}>
             <li className="text-[20px] px-6">Contact Us</li>
           </a>
         </ul>
