@@ -13,7 +13,7 @@ export default function WhyWorkWithUs() {
             <div className="flex items-center ">
               <div className="relative flex w-full">
                 <div>
-                  <img className="pt-[50px] " src="/public/assets/why-work-with-us.png" alt="why-work-with-us" />
+                  <img className="pt-[50px] " src="/assets/why-work-with-us.png" alt="why-work-with-us" />
                 <div className="absolute text-white left-[900px] top-[50px]">
                   <ul className="space-y-10 text-lg ">
                     <li className="flex items-center">
