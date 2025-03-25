@@ -19,7 +19,7 @@ export const About = () => {
           <div className="flex flex-col md:flex-row items-center w-full " style={{ marginTop: "-200px" }}>
             <div className="w-full md:w-1/2 flex justify-start md:block hidden">
               <img
-                src="/src/assets/robo-left.png"
+                src="/assets/robo-left.png"
                 alt="Robot Hand"
                 className="w-full max-w-3xl h-auto"
               />-
@@ -45,7 +45,7 @@ export const About = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-end">
               <img
-                src="/src/assets/robo-right.png"
+                src="/assets/robo-right.png"
                 alt="Robot Hand"
                 className="w-full max-w-3xl h-auto"
               />
@@ -60,25 +60,25 @@ export const About = () => {
             title: "Integrity",
             text: "We operate with transparency, honesty, and responsibility in every project...",
             color: "#71FBF7",
-            imgSrc: "/src/assets/integrity.png",
+            imgSrc: "public/assets/integrity.png",
           },
           {
             title: "Collaboration",
             text: "We believe in teamwork and working closely with clients to understand and meet their needs.",
             color: "#E805B8",
-            imgSrc: "/src/assets/collaborations.png",
+            imgSrc: "/assets/collaborations.png",
           },
           {
             title: "Excellence",
             text: "We strive for the highest standards in every solution we provide.",
             color: "#89EB33",
-            imgSrc: "/src/assets/excellence.png",
+            imgSrc: "/assets/excellence.png",
           },
           {
             title: "Innovation",
             text: "We prioritize creativity and the latest technology to deliver top-notch solutions.",
             color: "#E9CA00",
-            imgSrc: "/src/assets/innovation.png",
+            imgSrc: "/assets/innovation.png",
           }].map(({ title, text, color, imgSrc }, index) => (
             <div key={index} className={`relative flex flex-col md:flex-row items-center justify-center w-full md:w-[543px] md:p-6 gap-4 text-[${color}]`}>
               <div className={`absolute inset-y-0 left-0 h-[242px] w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}></div>
@@ -120,7 +120,7 @@ export const About = () => {
       </section>
 
       <section className="relative md:w-full min-h-screen flex items-center text-white mt-0">
-        <div className="absolute inset-0 bg-cover bg-center hidden md:block" style={{ backgroundImage: "url('/src/assets/hand.png')" }}>
+        <div className="absolute inset-0 bg-cover bg-center hidden md:block" style={{ backgroundImage: "url('/assets/hand.png')" }}>
           <div className="absolute inset-0 bg-gradient-to-black/60 from-black via-transparent to-black/60"></div>
         </div>
 
