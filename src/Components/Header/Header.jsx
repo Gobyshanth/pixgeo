@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../../assets/logo.webp";
+import logo from "../../../public/assets/logo.webp";
 import { useLocation } from "react-router-dom";
 
 export const Header = () => {

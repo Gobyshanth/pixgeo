@@ -3,7 +3,7 @@ export const About = () => {
     <div className="container">
       {/* Hero Section */}
       <section>
-        <div className="bg-[url('/src/assets/about-page.png')] bg-blur-custom bg-cover bg-center h-auto md:h-screen">
+        <div className="bg-[url('./assets/about-page.png')] bg-blur-custom bg-cover bg-center h-auto md:h-screen">
           <div className="bg-custom-gradient bg-cover bg-center h-[400px] md:h-screen flex items-end justify-center py-[50px]">
             <div className="relative flex items-center md:w-[1226px] md:h-[260px] text-center rounded-[32px] bg-black12 backdrop-blur-[25px] mx-5 md:mx-0">
               <h1 className="text-white font-courier font-bold text-[20px] md:text-[50px] lg:text-[90px] px-4 py-5">

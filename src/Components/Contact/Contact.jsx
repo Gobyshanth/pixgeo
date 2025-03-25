@@ -1,7 +1,7 @@
-import img from "../../assets/Rectangle 8.png"; // Correct import
-import address from "../../assets/home.png";
-import phone from "../../assets/phone.png";
-import email from "../../assets/email.png";
+import img from "../../../public/assets/Rectangle 8.png"; // Correct import
+import address from "../../../public/assets/home.png";
+import phone from "../../../public/assets/phone.png";
+import email from "../../../public/assets/email.png";
 
 export const Contact = () => {
   return (

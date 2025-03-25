@@ -1,7 +1,7 @@
 // import React from "react";
-import fb from "../../assets/devicon_facebook.png";
-import insta from "../../assets/instagram.png";
-import linkdn from "../../assets/linkedin.png";
+import fb from "../../../public/assets/devicon_facebook.png";
+import insta from "../../../public/assets/instagram.png";
+import linkdn from "../../../public/assets/linkedin.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {faSquareFacebook, faSquareInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
