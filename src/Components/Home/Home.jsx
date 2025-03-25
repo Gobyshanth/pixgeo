@@ -1,93 +1,79 @@
-
 import { FaReact, FaFigma, FaAws } from "react-icons/fa";
 import { SiFlutter, SiNodedotjs } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
-import { TbDatabaseSearch } from "react-icons/tb";
+import { TbDatabaseSearch, TbBrandAzure } from "react-icons/tb";
+
 import Location from "../Location/Location";
 import { OurExpertise } from "../OurExpertise/OurExpertise";
 import WhyWorkWithUs from "../WhyWorkWithUs/WhyWorkWithUs";
 
 export const Home = () => {
   return (
-    <div className="">
+    <div className="container">
+      {/* Hero Section */}
       <section>
-        <div className="home-page-initial">
-          <div className="font-courier  w-[1172px] align-center text-center bg-black/30 bg-transparent backdrop-blur-lg rounded-2xl h-[260px] mt-[450px]">
-            <h1 className="pt-[30px] font-bold text-[90px]">
-              Empowering Tomorrow with Technology
-            </h1>
+        <div className="bg-[url('/src/assets/Homepage-Background.png')] bg-blur-custom bg-cover bg-center h-auto md:h-screen">
+          <div className="bg-custom-gradient bg-cover bg-center h-[400px] md:h-screen flex items-end justify-center py-[50px]">
+            <div className="relative flex items-center md:w-[1172px] md:h-[260px] text-center rounded-[32px] bg-black12 backdrop-blur-[25px] mx-5 md:mx-0">
+              <h1 className="text-white font-courier font-bold text-[30px] md:text-[50px] lg:text-[90px] px-10 py-5">
+                Empowering Tomorrow with Technology
+              </h1>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className="flex items-center justify-center pt-[150px]">
-        {/* <div className="w-[100px] h-[100px] border-2 rounded-[100%] bg-white/30 bg-transparent backdrop-blur-xl ">
-
-        </div> */}
-
-        <section className="w-[1137px] h-[300px]  text-white flex flex-col items-center justify-center border border-[#6E6E6E] rounded-[32px]">
-          <div className="pb-[20px]">
-            <h1 className="font-courier font-bold text-[50px]">
+      {/* Transforming Ideas Section */}
+      <div className="flex bg-custom-mstart md:bg-custom-start items-center justify-center py-[50px] md:pt-[50px] md:pb-[0px]">
+        <section className="p-10 md:p-15 text-white flex flex-col items-center justify-center border border-[#6E6E6E] rounded-[32px] mx-4 md:mx-0">
+          <div>
+            <h2 className="font-courier font-bold text-[25px] md:text-[50px] text-center">
               Transforming Ideas into Digital
               <span className="block text-center">solutions...</span>
-            </h1>
+            </h2>
           </div>
 
-          <div className="pb-[20px] text-[16px] font-courier color-[#6E6E6E]">
+          <div className="pb-5 text-[16px] font-courier text-gray-400 text-center mt-4">
             We specialize in custom websites, mobile apps, and software
-            development to help businesses innovate and grow.{" "}
+            development to help businesses innovate and grow.
           </div>
 
-          <button className="bg-black text-white w-[255px] h-[56px] px-4 py-2 rounded-2xl border-2 border-[#E959D8] hover:bg-[#E959D8]">
+          <button className="bg-black text-white w-full md:w-[255px] h-[56px] px-4 py-2 rounded-2xl border-2 border-[#E959D8] hover:bg-[#E959D8] mt-6">
             Get Started Today
           </button>
         </section>
       </div>
 
+      {/* Our Expertise Section */}
       <OurExpertise />
 
-      <section>
-        <div className="flex mb-[30px] mt-[50px] h-150 items-center justify-center bg-black">
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center">
-            <SiFlutter className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Flutter</span>
-          </div>
-
-          <div className="pr-[40px] pl-[40px] flex flex-col items-center text-center ">
-            <FaReact className="w-[47px] h-[42px]" />
-            <span className="text-2xl">React Js</span>
-          </div>
-          <div className="pr-[40px] pl-[40px] flex flex-col items-center text-center ">
-            <DiDotnet className="w-[50px] h-[50px]" />
-            <span className="text-2xl">.Net</span>
-          </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center  ">
-            <FaFigma className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Figma</span>
-          </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center ">
-            <FaAws className="w-[50px] h-[50px]" />
-            <span className="text-2xl">AWS</span>
-          </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center  ">
-            <TbDatabaseSearch className="w-[50px] h-[50px]" />
-            <span className="text-2xl">SQL</span>
-          </div>
-          <div className="pr-[40px] pl-[40px]  flex flex-col items-center text-center ">
-            <h2>Why work with us?</h2>
-            <span className="text-2xl">AZYRE</span>
-          </div>
-          <div className="pr-[40px]  flex flex-col items-center text-center ">
-            <SiNodedotjs className="w-[50px] h-[50px]" />
-            <span className="text-2xl">Node Js</span>
-          </div>
-
-          <div className="content"></div>
+      {/* Technologies Slider Section */}
+      <section className="overflow-hidden bg-black h-[150px] flex items-center justify-center">
+        <div className="slider flex justify-center w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
+          {[
+            { icon: <SiFlutter className="w-10 h-10" />, text: "Flutter" },
+            { icon: <FaReact className="w-10 h-10" />, text: "React Js" },
+            { icon: <DiDotnet className="w-10 h-10" />, text: ".Net" },
+            { icon: <FaFigma className="w-[26px] h-[40px]" />, text: "Figma" },
+            { icon: <FaAws className="w-10 h-10" />, text: "AWS" },
+            { icon: <TbDatabaseSearch className="w-10 h-10" />, text: "SQL" },
+            { icon: <TbBrandAzure className="w-10 h-10" />, text: "Azure" },
+            { icon: <SiNodedotjs className="w-10 h-10" />, text: "Node Js" },
+          ].map((item, index) => (
+            <div key={index} className="flex flex-col items-center justify-center text-icon-text px-[20px] md:px-[40px]">
+              {item.icon}
+              <div className="pt-[17px]">
+                <span className="font-courier text-[16px] md:text-[20px]">{item.text}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-     <WhyWorkWithUs/>
+      {/* Why Work With Us Section */}
+      <WhyWorkWithUs />
 
+      {/* Location Section */}
       <section>
         <Location />
       </section>
