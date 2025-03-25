@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -48,7 +48,7 @@ h1 {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #1a2c3b;
+    color: #213547;
     background-color: #ffffff;
   }
 
