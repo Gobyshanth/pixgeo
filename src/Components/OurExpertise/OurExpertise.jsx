@@ -12,7 +12,7 @@ export const OurExpertise = () => {
           <div className="flex flex-col md:flex-row justify-center text-white">
           <div className="flex flex-col items-center text-center border border-[#6E6E6E] md:w-1/4 rounded-[32px] p-10 mt-10 md:m-2 md:p-6">
               <div className="flex items-center justify-center p-[20px]">
-                <img className=" w-[100px]" src="/src/assets/html.gif" alt="web-development" />
+                <img className=" w-[100px]" src="/assets/html.gif" alt="web-development" />
               </div>
               <div className="text-center font-semibold pb-4">
                 <h2>Web Developments</h2>
@@ -23,7 +23,7 @@ export const OurExpertise = () => {
             </div>
             <div className="flex flex-col items-center text-center border border-[#6E6E6E] md:w-1/4 rounded-[32px] p-10 mt-10 md:m-2 md:p-6">
               <div className="flex items-center justify-center p-[20px]">
-              <img className=" w-[100px]" src="/src/assets/mobile-app.png" alt="web-development" />
+              <img className=" w-[100px]" src="/assets/mobile-app.png" alt="web-development" />
               </div>
               <div className="text-center font-semibold pb-4">
                 <h2>Mobile App Developments</h2>
@@ -35,7 +35,7 @@ export const OurExpertise = () => {
 
             <div className="flex flex-col items-center text-center border border-[#6E6E6E] md:w-1/4 rounded-[32px] p-10 mt-10 md:m-2 md:p-6">
               <div className="flex items-center justify-center p-[20px]">
-              <img className=" w-[100px]" src="/src/assets/custom-software.png" alt="web-development" />
+              <img className=" w-[100px]" src="/assets/custom-software.png" alt="web-development" />
               </div>
               <div className="text-center font-semibold pb-4">
                 <h2>Custom Software Developments</h2>
@@ -47,7 +47,7 @@ export const OurExpertise = () => {
 
             <div className="flex flex-col items-center text-center border border-[#6E6E6E] md:w-1/4 rounded-[32px] p-10 mt-10 md:m-2 md:p-6">
               <div className="flex items-center justify-center p-[20px]">
-              <img className=" w-[100px]" src="/src/assets/custom-software.png" alt="web-development" />
+              <img className=" w-[100px]" src="/assets/custom-software.png" alt="web-development" />
               </div>
               <div className="text-center font-semibold pb-4">
                 <h2>Custom Software Developments</h2>
