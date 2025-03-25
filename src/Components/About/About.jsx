@@ -132,7 +132,7 @@ export const About = () => {
             Founded in 2010 by a group of passionate developers, our company
             started with a shared vision: to create software solutions that
             solve real business problems. From humble beginnings working from a
-            small garage, we've grown into a dynamic team that serves businesses
+            small garage, weve grown into a dynamic team that serves businesses
             across multiple industries worldwide.
           </p>
         </div>
