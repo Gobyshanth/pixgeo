@@ -22,7 +22,7 @@ export const About = () => {
                 src="/src/assets/robo-left.png"
                 alt="Robot Hand"
                 className="w-full max-w-3xl h-auto"
-              />
+              />-
             </div>
             <div className="md:w-1/2 sm:w-[400px] text-left p-0 md:pl-0 lg:r-[100px]" style={{ marginTop: "-50px", marginLeft: "-200px" }}>
               <h2 className="text-[18px] md:text-[50px] font-mono font-bold">Mission</h2>
