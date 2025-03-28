@@ -28,7 +28,7 @@ const Services = () => {
       <div className="relative w-full flex justify-center items-center">
         {/* Circular Lines */}
         <img 
-          src="/src/assets/Frame cov.png" 
+          src=" /assets/Frame cov.png" 
           alt="circle" 
           className="absolute w-100 h-100 border-none" 
         />
