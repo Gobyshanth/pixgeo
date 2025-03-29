@@ -26,7 +26,9 @@ export default {
         black35: 'rgba(0, 0, 0, 0.35)',
         black:'#000',
         blue:'rgba(28, 0, 207, 0.12)',
-        purple:'#E959D8'
+        purple:'#E959D8',
+        lgbg:'rgb(255 255 255 / 0%)',
+        mdbg:'rgb(255 255 255 / 30%)',
       },
       backgroundImage: {
        'custom-gradient': 'linear-gradient(to top left, rgba(90, 4, 81, 0.31),  rgba(90, 4, 81, 0.31), rgba(28, 0, 207, 0.29))',
