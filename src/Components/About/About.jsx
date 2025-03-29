@@ -167,7 +167,7 @@ export const About = () => {
 
       <section className="relative w-full h-auto flex md:items-center md:justify-center text-white mt-10">
         {/* Image Section */}
-        <div className="w-full">
+        <div className="md:w-full">
           <img
             src="/src/assets/hand.png"
             alt="Robot Hand"
