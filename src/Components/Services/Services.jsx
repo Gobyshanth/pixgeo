@@ -1,8 +1,5 @@
 import ServiceCard from "./ServiceCard";
-<<<<<<< HEAD
 import { motion } from "framer-motion";
-=======
->>>>>>> fddd4e5bc377234d2b53b6907c3d007b57c7d203
 
 export const Services = () => {
   const imageVariants = {
@@ -30,17 +27,12 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-<<<<<<< HEAD
               <h2 className="text-white md:text-[50px] text-3xl text-bold  font-bold pr-8 md:pb-5 md:pt-10 pb-5 pl-[10px]">
-=======
-              <h2 className="text-white md:text-[50px] text-bold  font-bold pr-8 md:pb-5 md:pt-10 pb-5 pl-[10px]">
->>>>>>> fddd4e5bc377234d2b53b6907c3d007b57c7d203
                 Web Development
               </h2>
             </div>
             <div className="flex items-center justify-center w-full">
               <div className="flex flex-col md:flex-row justify-center text-white">
-<<<<<<< HEAD
                 <div className="flex flex-col items-center text-center md:w-1/2 md:p-10 md:mt-10 md:m-2 md:p-6">
                   <div className="flex items-center justify-center md:p-[20px] ">
                     <motion.div
@@ -56,15 +48,6 @@ export const Services = () => {
                         alt="web-development"
                       />
                     </motion.div>
-=======
-                <div className="flex flex-col items-center text-center md:w-1/2 p-10 mt-10 md:m-2 md:p-6">
-                  <div className="flex items-center justify-center p-[20px] ">
-                    <img
-                      className=""
-                      src="/src/assets/21034578.png "
-                      alt="web-development"
-                    />
->>>>>>> fddd4e5bc377234d2b53b6907c3d007b57c7d203
                   </div>
                   <div className="text-center text-[24px] font-semibold pb-3">
                     <h3>Custom design & development</h3>
@@ -98,7 +81,6 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center md:py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-<<<<<<< HEAD
               <h2 className="text-white md:text-[50px] text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
                 Mobile App Development
               </h2>
@@ -120,21 +102,6 @@ export const Services = () => {
                         alt="web-development"
                       />
                     </motion.div>
-=======
-              <h2 className="text-white md:text-[50px]  text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
-              Mobile App Development
-              </h2>
-            </div>
-            <div className="flex items-center justify-center w-full">
-              <div className="flex flex-col md:flex-row justify-center text-white">
-                <div className="flex flex-col items-center text-center p-10 mt-10 md:m-2 md:p-6">
-                  <div className="flex items-center justify-center p-[20px]">
-                    <img
-                      // className="w-[520] h-[auto]"
-                      src="/src/assets/web.png"
-                      alt="web-development"
-                    />
->>>>>>> fddd4e5bc377234d2b53b6907c3d007b57c7d203
                   </div>
                   <div className="text-center text-[24px] font-semibold pb-4">
                     <h3>Native and cross-platform apps</h3>
@@ -188,13 +155,8 @@ export const Services = () => {
         <div className="flex flex-col items-center justify-center py-[50px] font-courier">
           <div className="w-[80%]">
             <div className="flex items-center">
-<<<<<<< HEAD
               <h2 className="text-white md:text-[50px] text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
                 Mobile App Development
-=======
-              <h2 className="text-white md:text-[50px]  text-3xl font-bold pr-8 md:pb-10 pb-5 pl-[10px]">
-              Custom Software Development
->>>>>>> fddd4e5bc377234d2b53b6907c3d007b57c7d203
               </h2>
             </div>
             <div className="flex items-center justify-center w-full">
