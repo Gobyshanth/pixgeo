@@ -39,6 +39,11 @@ export default {
        'custom-mdend': 'linear-gradient(to top right, #0005E9, #6736C1)',
        'custom-mdwhy': 'linear-gradient(to bottom left, #0005E9, #6736C1)',
       },
+
+      textShadow: {
+        'custom': '2px 2px 8px rgba(0, 0, 0, 0.5)', 
+      },
+      
     },
     fontFamily: {
       courier: ['Courier New', 'Courier', 'monospace'], // Add Courier font family

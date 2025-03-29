@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const Services = () => {
   const imageVariants = {
     hidden: { opacity: 0, y: 50 }, // initial state (hidden and moved down)
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }, // animation (fades in and moves up)
+    visible: { opacity: 1, y: 0, transition: { duration: 1.2 } }, // animation (fades in and moves up)
   };
   return (
     <div className="container">

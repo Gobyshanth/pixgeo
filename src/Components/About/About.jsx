@@ -1,4 +1,10 @@
+import { motion } from "framer-motion";
+
 export const About = () => {
+  const aboutVariants = {
+    hidden: { opacity: 0, y: 50 }, // initial state (hidden and moved down)
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } }, // animation (fades in and moves up)
+  };
   return (
     <div className="container">
       {/* Hero Section */}
@@ -15,37 +21,77 @@ export const About = () => {
       </section>
 
       {/* Mission and Vision Section */}
-      <section className="bg-gradient-to-r from-[#0c0618] via-[#1a0f2b] to-[#09202b] py-2 text-white text-center w-full">
+      <section className="bg-gradient-to-r from-[#0c0618] via-[#1a0f2b] to-[#09202b] py-12 text-white text-center w-full">
         <div className="w-full flex flex-col items-center">
-          <div className="flex flex-col md:flex-row items-center w-full" style={{ marginTop: "-200px" }}>
+          <div className="flex flex-col md:flex-row items-center w-full ">
             <div className="hidden md:block md:w-1/2">
-              <img src="/src/assets/robo-left.png" alt="Robot Hand" className="w-full max-w-3xl h-auto" />
+              <motion.div
+                className="m-5"
+                initial="hidden"
+                whileInView="visible"
+                variants={aboutVariants}
+                viewport={{ once: true }}
+              >
+                <img
+                  src="/src/assets/robo-left.png"
+                  alt="Robot Hand"
+                  className="w-full max-w-3xl h-auto"
+                />
+              </motion.div>
             </div>
-            <div className="md:w-1/2 sm:w-[400px] text-left p-0 md:pl-0 lg:pr-[100px]" style={{ marginTop: "-50px", marginLeft: "-200px" }}>
-              <h2 className="text-[18px] md:text-[50px] font-mono font-bold">Mission</h2>
-              <p className="text-[14px] md:text-[20px] text-gray-300 font-bold font-courier w-[90%] mx-auto">
-                Our mission is to empower businesses through innovative, customized digital solutions that drive growth, efficiency, and success.
-              </p>
+            <div className="md:w-1/2 text-left p-4 md:p-0 lg:pr-20">
+              <motion.div
+                className="m-5"
+                initial="hidden"
+                whileInView="visible"
+                variants={aboutVariants}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-[28px] md:text-[50px] font-mono font-bold">
+                  Mission
+                </h2>
+                <p className="text-[16px] md:text-[20px] text-gray-300 font-bold font-courier mx-auto">
+                  Our mission is to empower businesses through innovative,
+                  customized digital solutions that drive growth, efficiency,
+                  and success.
+                </p>
+              </motion.div>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center w-full" style={{ marginTop: "-550px", marginBottom: "-200px" }}>
-            <div className="w-full md:w-1/2 text-left p-4" style={{ marginLeft: "160px" }}>
-              <h2 className="text-[18px] md:text-[50px] font-mono font-bold">Vision</h2>
-              <p className="text-[14px] md:text-[20px] font-bold text-gray-300 font-courier">
-                To become the global leader in custom web, mobile, and software development, shaping the future of technology one project at a time.
-              </p>
+          <div className="flex flex-col md:flex-row items-center w-full mt-12">
+            <div className="w-full md:w-1/2 text-left p-4 lg:pl-20">
+              <motion.div
+                className="m-5"
+                initial="hidden"
+                whileInView="visible"
+                variants={aboutVariants}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-[28px] md:text-[50px] font-mono font-bold">
+                  Vision
+                </h2>
+                <p className="text-[16px] md:text-[20px] font-bold text-gray-300 font-courier">
+                  To become the global leader in custom web, mobile, and
+                  software development, shaping the future of technology one
+                  project at a time.
+                </p>
+              </motion.div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-end">
-              <img src="/src/assets/robo-right.png" alt="Robot Hand" className="w-full max-w-3xl h-auto" />
+            <div className="hidden md:block md:w-1/2">
+              <img
+                src="/src/assets/robo-right.png"
+                alt="Robot Hand"
+                className="w-[100%] max-w-3xl h-auto"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Values Section */}
-      <section className="inset-0 bg-gradient-to from-black via-transparent mb-16 mt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[50px] gap-y-[120px] px-12 max-w-7xl w-full mx-auto justify-center items-center text-center md:pb-[60px]">
+      <section className="relative bg-gradient-to from-black via-transparent mb-20 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12 px-2 sm:px-8 md:px-12 max-w-7xl w-full mx-auto justify-center items-center text-center md:pb-16">
           {[
             {
               title: "Integrity",
@@ -74,49 +120,83 @@ export const About = () => {
           ].map(({ title, text, color, imgSrc }, index) => (
             <div
               key={index}
-              className={`relative flex flex-col md:flex-row items-center justify-center w-full md:w-[543px] md:p-6 gap-4 text-[${color}]`}
+              className={`relative flex flex-col items-center justify-center w-full sm:p-4 md:p-6 gap-4 text-[${color}]`}
             >
-              <div className={`absolute inset-y-0 left-0 h-[242px] w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}></div>
-              <div className={`absolute inset-y-0 right-0 h-[242px] w-10 border-r-2 border-t-2 border-b-2 border-[${color}]`}></div>
-
-              <div className="relative flex flex-col md:items-start items-center w-full md:pl-[30px] md:pb-[40px]">
-                <div className="relative w-12 h-12 group">
-                  <div className={`absolute inset-0 w-[130%] h-[130%] bg-[${color}] opacity-20 blur-md rounded-3xl`}></div>
-                  <img src={imgSrc} alt={`${title} Icon`} className="w-12 h-12 relative z-10 animate-zoom" />
+              <div
+                className={`absolute inset-y-0 left-0 h-[242px]  w-8 sm:w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}
+              ></div>
+              <div
+                className={`absolute inset-y-0 right-0 h-[242px] w-8 sm:w-10 border-r-2 border-t-2 border-b-2 border-[${color}]`}
+              ></div>
+              <div className="relative flex flex-col md:py-0 py-10 items-center w-full">
+                <div className="relative w-10 sm:w-12 h-10 sm:h-12 group">
+                  <div
+                    className={`absolute inset-0 w-[120%] sm:w-[130%] h-[120%] sm:h-[130%] bg-[${color}] opacity-20 blur-md rounded-3xl`}
+                  ></div>
+                  <img
+                    src={imgSrc}
+                    alt={`${title} Icon`}
+                    className="w-10 sm:w-12 h-10 sm:h-12 relative z-10 animate-zoom"
+                  />
                 </div>
-                <div className="mt-2 text-center md:text-left md:pl-[70px] md:w-[470px] md:h-[60px]">
-                  <h2 className={`text-[14px] md:text-[24px] font-bold text-[${color}] font-courier`}>{title}</h2>
-                  <p className={`text-[14px] md:text-[18px] font-courier`}>{text}</p>
+                <div className="mt-2 text-center w-[90%] md:w-[470px]">
+                  <h2
+                    className={`text-[16px] sm:text-[18px] md:text-[24px] font-bold text-[${color}] font-courier`}
+                  >
+                    {title}
+                  </h2>
+                  <p className="text-[12px] sm:text-[14px] md:text-[18px] font-courier">
+                    {text}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
-          <style>
-            {`
-              @keyframes zoomEffect {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.2); }
-                100% { transform: scale(1); }
-              }
-              .animate-zoom {
-                animation: zoomEffect 1s infinite;
-              }
-            `}
-          </style>
+          <style>{`
+      @keyframes zoomEffect {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      .animate-zoom {
+        animation: zoomEffect 1s infinite;
+      }
+    `}</style>
         </div>
       </section>
 
-      {/* Our Journey Section */}
-      <section className="relative md:w-full min-h-screen flex items-center text-white mt-0">
-        <div className="absolute inset-0 bg-cover bg-center hidden md:block" style={{ backgroundImage: "url('/src/assets/hand.png')" }}>
-          <div className="absolute inset-0 bg-gradient-to-black/60 from-black via-transparent to-black/60"></div>
+      <section className="relative w-full h-auto flex md:items-center md:justify-center text-white mt-10">
+        {/* Image Section */}
+        <div className="w-full">
+          <img
+            src="/src/assets/hand.png"
+            alt="Robot Hand"
+            className="w-full h-auto object-cover opacity-60 hidden md:block"
+          />
         </div>
-        <div className="relative z-10 max-w-4xl w-[800px] sm:mx-[150px] px-6 md:px-0 text-left md:mt-[250px]">
-          <h2 className="text-[20px] md:text-[50px] font-bold font-mono mb-4 font-courier">Our Journey</h2>
-          <p className="text-gray-300 text-[14px] md:text-[18px] text-base md:text-lg leading-relaxed font-courier">
-            Founded in 2010 by a group of passionate developers, our company started with a shared vision: to create software solutions that solve real business problems. 
-            From humble beginnings working from a small garage, we've grown into a dynamic team that serves businesses across multiple industries worldwide.
-          </p>
+
+        {/* Text Section */}
+        <div className="md:absolute relative flex md:w-full md:items-center md:justify-center z-10 md:my-0 my-20 md:px-4">
+          <motion.div
+            className="m-5"
+            initial="hidden"
+            whileInView="visible"
+            variants={aboutVariants}
+            viewport={{ once: true }}
+          >
+            <div className="md:text-center text-left font-mono  md:max-w-4xl">
+              <h2 className="text-[28px] md:text-[50px] font-bold font-mono mb-4 shadow-lg">
+                Our Journey
+              </h2>
+              <p className="text-gray-300 text-[16px] md:text-[18px] leading-relaxed">
+                Founded in 2010 by a group of passionate developers, our company
+                started with a shared vision: to create software solutions that
+                solve real business problems. From humble beginnings working
+                from a small garage, we've grown into a dynamic team that serves
+                businesses across multiple industries worldwide.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
