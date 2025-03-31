@@ -44,7 +44,7 @@ export const Services = () => {
                     >
                       <img
                         className=""
-                        src="/src/assets/21034578.png "
+                        src="/assets/21034578.png "
                         alt="web-development"
                       />
                     </motion.div>
@@ -64,7 +64,7 @@ export const Services = () => {
                     >
                       <img
                         className=""
-                        src="/src/assets/21034578.png"
+                        src="/assets/21034578.png"
                         alt="web-development"
                       />
                     </motion.div>
@@ -98,7 +98,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/web.png"
+                        src="/assets/web.png"
                         alt="web-development"
                       />
                     </motion.div>
@@ -118,7 +118,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/platform-apps.png"
+                        src="/assets/platform-apps.png"
                         alt="platform-apps"
                       />
                     </motion.div>
@@ -138,7 +138,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/platform-apps.png"
+                        src="/assets/platform-apps.png"
                         alt="platform-apps"
                       />
                     </motion.div>
@@ -172,7 +172,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/web.png"
+                        src="/assets/web.png"
                         alt="web-development"
                       />
                     </motion.div>
@@ -192,7 +192,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/platform-apps.png"
+                        src="/assets/platform-apps.png"
                         alt="platform-apps"
                       />
                     </motion.div>
@@ -212,7 +212,7 @@ export const Services = () => {
                     >
                       <img
                         className="w-[520px] h-[auto]"
-                        src="/src/assets/platform-apps.png"
+                        src="/assets/platform-apps.png"
                         alt="platform-apps"
                       />
                     </motion.div>

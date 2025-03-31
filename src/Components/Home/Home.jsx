@@ -49,7 +49,7 @@ export const Home = () => {
 
       {/* Technologies Slider Section */}
       <section className="overflow-hidden bg-black h-[150px] flex items-center justify-center">
-        <div className="slider flex justify-center w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
+        <div className="slider flex justify-center md:w-full transition-transform duration-500 ease-linear animate-slide md:animate-none">
           {[
             { icon: <SiFlutter className="w-10 h-10" />, text: "Flutter" },
             { icon: <FaReact className="w-10 h-10" />, text: "React Js" },
@@ -60,15 +60,10 @@ export const Home = () => {
             { icon: <TbBrandAzure className="w-10 h-10" />, text: "Azure" },
             { icon: <SiNodedotjs className="w-10 h-10" />, text: "Node Js" },
           ].map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center text-icon-text px-[20px] md:px-[40px]"
-            >
+            <div key={index} className="flex flex-col items-center justify-center text-icon-text px-[20px] md:px-[40px]">
               {item.icon}
               <div className="pt-[17px]">
-                <span className="font-courier text-[16px] md:text-[20px]">
-                  {item.text}
-                </span>
+                <span className="font-courier text-[16px] md:text-[20px]">{item.text}</span>
               </div>
             </div>
           ))}

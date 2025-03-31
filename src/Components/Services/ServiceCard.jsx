@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const ServiceCard = ({ title, color, width, height, description }) => {
+const ServiceCard = ({ title, color, width, description }) => {
   const [isHovered, setIsHovered] = useState(false); 
 
   return (
     <div
-      className={`flex flex-col items-center justify-center px-6 py-3 w-[${width}] h-[${height}] md:rounded-full ${color} text-black font-courier text-[24px] font-bold shadow-lg transition-all transition-duration: 1000ms`}
+      className={`flex flex-col items-center justify-center px-6 py-3 w-[${width}] md:rounded-full ${color} text-black font-courier text-[24px] font-bold shadow-lg transition-all transition-duration: 1000ms`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -41,7 +41,7 @@ const Services = () => {
         <div className="relative w-full flex-col md:flex-row flex justify-center items-center">
           {/* Circular Lines */}
           <img 
-            src="/src/assets/Frame cov.png" 
+            src="/assets/Frame cov.png" 
             alt="circle" 
             className="absolute border-none hidden md:flex" 
           />

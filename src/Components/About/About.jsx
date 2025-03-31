@@ -9,7 +9,7 @@ export const About = () => {
     <div className="container">
       {/* Hero Section */}
       <section>
-        <div className="bg-[url('./assets/about-page.png')] bg-blur-custom bg-cover bg-center h-auto md:h-screen">
+        <div className="bg-[url('/assets/about-page.png')] bg-blur-custom bg-cover bg-center h-auto md:h-screen">
           <div className="bg-custom-gradient bg-cover bg-center h-[400px] md:h-screen flex items-end justify-center py-[50px]">
             <div className="relative flex items-center md:w-[1226px] md:h-[260px] text-center rounded-[32px] bg-black12 backdrop-blur-[25px] mx-5 md:mx-0">
               <h1 className="text-white font-courier font-bold text-[30px] md:text-[50px] lg:text-[90px] px-4 py-5">
@@ -33,7 +33,7 @@ export const About = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src="/src/assets/robo-left.png"
+                  src="/assets/robo-left.png"
                   alt="Robot Hand"
                   className="w-full max-w-3xl h-auto"
                 />
@@ -80,15 +80,14 @@ export const About = () => {
             </div>
             <div className="hidden md:block md:w-1/2">
               <img
-                src="./assets/robo-right.png"
+                src="/assets/robo-right.png"
                 alt="Robot Hand"
                 className="w-[100%] max-w-3xl h-auto"
               />
             </div>
           </div>
         </div>
-      </section> */
-      <Vission />
+      </section>
 
       {/* Values Section */}
       <section className="relative bg-gradient-to from-black via-transparent mb-20 mt-20">
@@ -98,25 +97,25 @@ export const About = () => {
               title: "Integrity",
               text: "We operate with transparency, honesty, and responsibility in every project...",
               color: "#71FBF7",
-              imgSrc: "/src/assets/integrity.png",
+              imgSrc: "/assets/integrity.png",
             },
             {
               title: "Collaboration",
               text: "We believe in teamwork and working closely with clients to understand and meet their needs.",
               color: "#E805B8",
-              imgSrc: "/src/assets/collaborations.png",
+              imgSrc: "/assets/collaborations.png",
             },
             {
               title: "Excellence",
               text: "We strive for the highest standards in every solution we provide.",
               color: "#89EB33",
-              imgSrc: "/src/assets/excellence.png",
+              imgSrc: "/assets/excellence.png",
             },
             {
               title: "Innovation",
               text: "We prioritize creativity and the latest technology to deliver top-notch solutions.",
               color: "#E9CA00",
-              imgSrc: "/src/assets/innovation.png",
+              imgSrc: "/assets/innovation.png",
             },
           ].map(({ title, text, color, imgSrc }, index) => (
             <div
@@ -170,7 +169,7 @@ export const About = () => {
         {/* Image Section */}
         <div className="md:w-full">
           <img
-            src="/src/assets/hand.png"
+            src="/assets/hand.png"
             alt="Robot Hand"
             className="w-full h-auto object-cover opacity-60 hidden md:block"
           />
@@ -193,7 +192,7 @@ export const About = () => {
                 Founded in 2010 by a group of passionate developers, our company
                 started with a shared vision: to create software solutions that
                 solve real business problems. From humble beginnings working
-                from a small garage, we've grown into a dynamic team that serves
+                from a small garage, weve grown into a dynamic team that serves
                 businesses across multiple industries worldwide.
               </p>
             </div>
