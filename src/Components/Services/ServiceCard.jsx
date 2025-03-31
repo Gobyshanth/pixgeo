@@ -1,14 +1,24 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
-const ServiceCard = ({ title, color, width }) => {
+const ServiceCard = ({ title, color, width, height, description }) => {
+  const [isHovered, setIsHovered] = useState(false); 
+
   return (
     <div
-      className={`flex items-center justify-between px-6 py-3 w-[${width}] h-[100px] rounded-full ${color} text-black font-courier text-[24px] font-bold shadow-lg`}
+      className={`flex flex-col items-center justify-center px-6 py-3 w-[${width}] h-[${height}] md:rounded-full ${color} text-black font-courier text-[24px] font-bold shadow-lg transition-all transition-duration: 1000ms`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {title}
-      <div className="w-[54px] h-[54px] bg-black flex items-center justify-center rounded-full">
-        <span className="text-white text-bold text-lg">→</span>
+      <div className="text-center">
+        {title}
       </div>
+      {/* Show the description on hover inside the card */}
+      {isHovered && (
+        <div className="text-center text-sm mt-2">
+          {description}
+        </div>
+      )}
     </div>
   );
 };
@@ -16,36 +26,48 @@ const ServiceCard = ({ title, color, width }) => {
 ServiceCard.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  width: PropTypes.string
+  width: PropTypes.string,
+  description: PropTypes.string.isRequired,
 };
 
 const Services = () => {
   return (
-    <div className=" bg-gradient-to-b from-[#0f0f0f] via-[#362134] to-[#181a22]">
-      <div className="flex flex-row justify-left items-left pl-[150px] pt-[90px]"> <h2 className="text-white text-[50px] font-bold font-courier mt-50 text-left">Our Services</h2></div>
-  
-   <div className="min-h-screen flex flex-row justify-center items-center  p-6">
-      <div className="relative w-full flex justify-center items-center">
-        {/* Circular Lines */}
-        <img 
-          src=" /assets/Frame cov.png" 
-          alt="circle" 
-          className="absolute w-100 h-100 border-none" 
-        />
+    <div className="bg-gradient-to-b from-[#0f0f0f] via-[#362134] to-[#181a22] md:pt-[90px] pt-[50px] md:pb-[0] pb-[50px]">
+      <div className="flex flex-row justify-left items-left pl-[20px] md:pl-[150px]">
+        <h2 className="text-white md:text-[50px] text-[24px] font-bold font-courier mt-50 text-left">Our Services</h2>
+      </div>
 
-        {/* Service Cards */}
-        <div className="absolute top-[40px] left-[300px] w-[446px]">
-          <ServiceCard
-            title=" Mobile App Development"
-            color="bg-[#71FBF7]"
+      <div className="md:min-h-screen flex flex-row justify-center items-center md:p-6 py-3">
+        <div className="relative w-full flex-col md:flex-row flex justify-center items-center">
+          {/* Circular Lines */}
+          <img 
+            src="/src/assets/Frame cov.png" 
+            alt="circle" 
+            className="absolute border-none hidden md:flex" 
           />
-        </div>
-        <div className="absolute bottom-[200px] left-[230px] w-[516px]">
-          <ServiceCard title="Custom Software Development" color="bg-[#C837AB]"  />
-        </div>
-        <div className="absolute right-[100px] bottom-[50px] w-[363px]">
-          <ServiceCard title="Web Development" color="bg-[#FEBABB]" />
-        </div>
+
+          {/* Service Cards */}
+          <div className="relative md:absolute mb-5 md:top-[40px] left-[0] md:left-[300px] max-w-[300px] md:max-w-[100%]">
+            <ServiceCard
+              title="Mobile App Development"
+              color="bg-[#71FBF7]"
+              description="Tailored software solution to automate, optimize, and innovate."
+            />
+          </div>
+          <div className="relative md:absolute mb-5 md:bottom-[200px] left-[0] md:left-[230px] max-w-[300px] md:max-w-[100%]">
+            <ServiceCard 
+              title="Custom Software Development" 
+              color="bg-[#C837AB]" 
+              description="Tailored software solution to automate, optimize, and innovate."
+            />
+          </div>
+          <div className="web-development relative md:absolute left-[0] md:left-[600px] lg:left-[900px] md:bottom-[50px] max-w[300px] md:max-w-[100%]">
+            <ServiceCard 
+              title="Web Development" 
+              color="bg-[#FEBABB]" 
+              description="Tailored software solution to automate, optimize, and innovate."
+            />
+          </div>
         </div>
       </div>
     </div>

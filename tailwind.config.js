@@ -26,7 +26,9 @@ export default {
         black35: 'rgba(0, 0, 0, 0.35)',
         black:'#000',
         blue:'rgba(28, 0, 207, 0.12)',
-        purple:'#E959D8'
+        purple:'#E959D8',
+        lgbg:'rgb(255 255 255 / 0%)',
+        mdbg:'rgb(255 255 255 / 30%)',
       },
       backgroundImage: {
        'custom-gradient': 'linear-gradient(to top left, rgba(90, 4, 81, 0.31),  rgba(90, 4, 81, 0.31), rgba(28, 0, 207, 0.29))',
@@ -37,6 +39,11 @@ export default {
        'custom-mdend': 'linear-gradient(to top right, #0005E9, #6736C1)',
        'custom-mdwhy': 'linear-gradient(to bottom left, #0005E9, #6736C1)',
       },
+
+      textShadow: {
+        'custom': '2px 2px 8px rgba(0, 0, 0, 0.5)', 
+      },
+      
     },
     fontFamily: {
       courier: ['Courier New', 'Courier', 'monospace'], // Add Courier font family
