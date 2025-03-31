@@ -1,3 +1,5 @@
+import Vission from "./VissionCard/vission";
+
 export const About = () => {
   return (
     <div className="container">
@@ -14,12 +16,12 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-[#0c0618] via-[#1a0f2b] to-[#09202b] py-2 text-white text-center w-full">
+      {/* <section className="bg-gradient-to-r from-[#0c0618] via-[#1a0f2b] to-[#09202b] py-2 text-white text-center w-full">
         <div className="w-full flex flex-col items-center">
           <div className="flex flex-col md:flex-row items-center w-full " style={{ marginTop: "-200px" }}>
             <div className="w-full md:w-1/2 flex justify-start md:block hidden">
               <img
-                src="/assets/robo-left.png"
+                src="../../../public/assets/robo-left.png"
                 alt="Robot Hand"
                 className="w-full max-w-3xl h-auto"
               />-
@@ -45,14 +47,15 @@ export const About = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-end">
               <img
-                src="/assets/robo-right.png"
+                src="./assets/robo-right.png"
                 alt="Robot Hand"
                 className="w-full max-w-3xl h-auto"
               />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Vission />
 
       <section className="inset-0 bg-gradient-to from-black via-transparent mb-16 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[50px] gap-y-[120px] px-12 max-w-7xl w-full mx-auto justify-center items-center text-center md:pb-[60px]">
