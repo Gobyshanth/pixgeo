@@ -120,10 +120,10 @@ export const About = () => {
           ].map(({ title, text, color, imgSrc }, index) => (
             <div
               key={index}
-              className={`relative flex flex-col items-center justify-center w-full sm:p-4 md:p-6 gap-4 text-[${color}]`}
+              className={`relative flex flex-col items-center justify-center w-full md:w-full sm:p-4 md:p-6 gap-4 text-[${color}]`}
             >
               <div
-                className={`absolute inset-y-0 left-0 h-[242px] ml-[20px]   w-[300px] sm:w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}
+                className={`absolute inset-y-0 left-0 h-[242px] ml-[20px]  w-8 sm:w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}
               ></div>
               <div
                 className={`absolute inset-y-0 right-0 h-[242px] mr-[20px] w-8 sm:w-10 border-r-2 border-t-2 border-b-2 border-[${color}]`}
