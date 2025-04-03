@@ -10,7 +10,7 @@ export const Contact = () => {
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="flex justify-center items-center min-h-screen pt-[0px]">
-        <div className="bg-black text-white text-center p-6 sm:p-10 md:p-16 lg:p-[80px] pt-6 sm:pt-10 md:pt-16 bg-opacity-50 rounded-2xl h-auto sm:h-[1000px] md:h-[1200px] h-[1200px] w-full sm:w-[90%] md:w-[90%] lg:w-[1140px] mt-10 sm:mt-20 md:mt-32 lg:mt-[250px]">
+        <div className="bg-black text-white text-center p-6 sm:p-10 md:p-16 lg:p-[80px] pt-6 sm:pt-10 md:pt-16 bg-opacity-50 rounded-2xl h-auto sm:h-[1000px] md:h-[1200px] h-[1200px] w-full sm:w-[90%] md:w-[90%] lg:w-[1140px] mt-10 mr-[15px] ml-[15px] sm:mt-20 md:mt-32 lg:mt-[250px]">
           <h3 className="text-2xl  md:text-[70px] font-bold mb-4 pb-[20px] font-courier">
             Contact
           </h3>
