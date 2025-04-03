@@ -50,7 +50,7 @@ export const OurExpertise = () => {
               <img className=" w-[100px]" src="/assets/custom-software.png" alt="web-development" />
               </div>
               <div className="text-center font-semibold pb-4">
-                <h2>Custom Software Developments</h2>
+              <h2>Artificial Intelligent Developments</h2>  
               </div>
               <div className="text-left">
                 <p>&quot;Innovative iOS and Android apps that engage users and drive growth.&quot;</p>

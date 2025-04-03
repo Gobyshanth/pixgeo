@@ -56,7 +56,7 @@ export const Footer = () => {
 
       <div className="footer-third-line pt-10">
         <div className="text-white md:text-center font-Courier">
-          <p>&copy; {currentYear} company name. All Right Reserved</p>
+          <p>&copy; {currentYear} PIXGEO. All Right Reserved</p>
         </div>
       </div>
     </div>

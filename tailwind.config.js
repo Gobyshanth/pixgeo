@@ -35,9 +35,9 @@ export default {
        'custom-start': 'linear-gradient(to top left, rgba(28, 0, 207, 0.12), #000, rgba(90, 4, 82, 0.12))',
        'custom-end': 'linear-gradient(to bottom left, rgba(28, 0, 207, 0.12), #000, rgba(90, 4, 82, 0.12))',
        'custom-why': 'linear-gradient(to top left, rgba(28, 0, 207, 0.31), rgba(0, 0, 0, 0), rgba(90, 4, 82, 0.12))',
-       'custom-mstart': 'linear-gradient(to top left, #6736C1 ,#0005E9)',
-       'custom-mdend': 'linear-gradient(to top right, #0005E9, #6736C1)',
-       'custom-mdwhy': 'linear-gradient(to bottom left, #0005E9, #6736C1)',
+      //  'custom-mstart': 'linear-gradient(to top left, #6736C1 ,#0005E9)',
+      //  'custom-mdend': 'linear-gradient(to top right, #0005E9, #6736C1)',
+      //  'custom-mdwhy': 'linear-gradient(to bottom left, #0005E9, #6736C1)',
       },
 
       textShadow: {

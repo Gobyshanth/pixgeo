@@ -97,7 +97,7 @@ export const About = () => {
               title: "Integrity",
               text: "We operate with transparency, honesty, and responsibility in every project...",
               color: "#71FBF7",
-              imgSrc: "/assets/integrity.png",
+              imgSrc: "./assets/abc.png",
             },
             {
               title: "Collaboration",
@@ -123,12 +123,12 @@ export const About = () => {
               className={`relative flex flex-col items-center justify-center w-full sm:p-4 md:p-6 gap-4 text-[${color}]`}
             >
               <div
-                className={`absolute inset-y-0 left-0 h-[242px]  w-8 sm:w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}
+                className={`absolute inset-y-0 left-0 h-[242px] ml-[20px]   w-[300px] sm:w-10 border-l-2 border-t-2 border-b-2 border-[${color}]`}
               ></div>
               <div
-                className={`absolute inset-y-0 right-0 h-[242px] w-8 sm:w-10 border-r-2 border-t-2 border-b-2 border-[${color}]`}
+                className={`absolute inset-y-0 right-0 h-[242px] mr-[20px] w-8 sm:w-10 border-r-2 border-t-2 border-b-2 border-[${color}]`}
               ></div>
-              <div className="relative flex flex-col md:py-0 py-10 items-center w-full">
+              <div className="relative flex flex-col md:py-0 py-10 items-center w-[250px] h-[220px] pb-[80px]">
                 <div className="relative w-10 sm:w-12 h-10 sm:h-12 group">
                   <div
                     className={`absolute inset-0 w-[120%] sm:w-[130%] h-[120%] sm:h-[130%] bg-[${color}] opacity-20 blur-md rounded-3xl`}
@@ -136,12 +136,12 @@ export const About = () => {
                   <img
                     src={imgSrc}
                     alt={`${title} Icon`}
-                    className="w-10 sm:w-12 h-10 sm:h-12 relative z-10 animate-zoom"
+                    className="w-10 sm:w-12 h-10 sm:h-12 relative z-10 animate-zoom "
                   />
                 </div>
                 <div className="mt-2 text-center w-[90%] md:w-[470px]">
                   <h2
-                    className={`text-[16px] sm:text-[18px] md:text-[24px] font-bold text-[${color}] font-courier`}
+                    className={`text-[16px] sm:text-[18px]  md:text-[24px] font-bold text-[${color}] font-courier`}
                   >
                     {title}
                   </h2>
@@ -176,7 +176,7 @@ export const About = () => {
         </div>
 
         {/* Text Section */}
-        <div className="md:absolute relative flex md:w-full md:items-center md:justify-center z-10 md:my-0 my-20 md:px-4">
+        <div className="md:absolute relative flex md:w-full md:items-center md:justify-center z-10 mt-0 md:my-0 my-20 md:px-4">
           <motion.div
             className="m-5"
             initial="hidden"
