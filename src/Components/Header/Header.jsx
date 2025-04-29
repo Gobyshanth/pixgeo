@@ -36,10 +36,10 @@ export const Header = () => {
     <div className="m-0 p-0">
       {/* Mobile Menu */}
       <div className="relative mt-12 md:hidden flex items-center">
-        <ul className="z-1999 fixed w-full p-5 bg-white/10 backdrop-blur-lg flex justify-between items-center">
+        <ul className="z-1999 fixed w-full p-5 bg-black/10 backdrop-blur-lg flex justify-between items-center">
           <li>
             <a href="/" className="flex items-center">
-              <div className="rounded-full p-2 bg-white/10 backdrop-blur-[25px]">
+              <div className="rounded-full p-2 bg-black/10 backdrop-blur-[25px]">
                 <img
                   src={logo}
                   alt="Logo"
@@ -64,7 +64,7 @@ export const Header = () => {
         {isMenuOpen && (
           <ul
             ref={menuRef}
-            className="z-1999 fixed top-[75px] text-left w-[200px] right-0 font-roboto bg-white/10 backdrop-blur-lg flex flex-col"
+            className="z-1999 text-[15px] fixed top-[80px] text-left w-full right-0 font-roboto bg-black  flex flex-col"
           >
             <a
               href="/"
