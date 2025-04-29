@@ -14,7 +14,7 @@ export default function WhyWorkWithUs() {
               <div className="relative flex w-full">
                 <div>
                   <img className="pt-[50px] " src="/assets/why-work-with-us.png" alt="why-work-with-us" />
-                <div className="absolute text-white left-[900px] top-[50px]">
+                <div className="absolute text-white left-[900px] top-[50px] text-Roboto sm:text-sm sm:bg-black">
                   <ul className="space-y-10 text-lg ">
                     <li className="flex items-center">
                       <span className="inline-block bg-white mt-[-20px] ml-[-155px] "></span>

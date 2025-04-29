@@ -25,15 +25,15 @@ export const Home = () => {
 
       {/* Transforming Ideas Section */}
       <div className="flex bg-custom-mstart md:bg-custom-start items-center justify-center py-[50px] md:pt-[50px] md:pb-[0px]">
-        <section className="p-8 md:p-15 bg-mdbg md:bg-lgbg text-white flex flex-col items-center justify-center md:border border-[#6E6E6E] rounded-[32px] mx-4 md:mx-0">
+        <section className="p-8 md:p-15 bg-black  text-white flex flex-col items-center justify-center md:border border-[#6E6E6E] rounded-[32px] mx-4 md:mx-0">
           <div>
-            <h2 className="font-courier text-black md:text-white font-bold text-[25px] md:text-[50px] text-center">
+            <h2 className="font-courier text-white md:text-white font-bold text-[25px] md:text-[50px] text-center">
               Transforming Ideas into Digital
               <span className="block text-center">solutions...</span>
             </h2>
           </div>
 
-          <div className="pb-5 text-[16px] font-courier text-black font-bold-700 md:text-white text-center mt-4">
+          <div className="pb-5 text-[16px] font-courier text-white font-bold-700 md:text-white text-center mt-4">
             We specialize in custom websites, mobile apps, and software
             development to help businesses innovate and grow.
           </div>
